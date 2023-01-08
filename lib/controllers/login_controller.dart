@@ -17,6 +17,7 @@ class LoginController {
       http.Response response =
           await http.post(url, body: jsonEncode(body), headers: headers);
       if (response.statusCode == 200) {
+        // ignore: unused_local_variable
         final json = jsonDecode(response.body);
         debugPrint("it works");
         // Save the token in shared preferences

@@ -87,7 +87,7 @@ Widget buildMenuItems(BuildContext context) => Container(
                 //Push the login page onto the navigation stack
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => LoginPage(),
+                    builder: (context) => const LoginPage(),
                   ),
                 );
               },

@@ -30,6 +30,7 @@ class RegistrationController extends GetxController {
           var resonseMS = json["errors"]["Email"];
           debugPrint(resonseMS);
 
+          // ignore: unnecessary_nullable_for_final_variable_declarations
           final SharedPreferences? prefs = await _prefs;
 
           await prefs?.setString("value", resonseMS);
